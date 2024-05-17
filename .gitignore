@@ -1,0 +1,49 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pipenv
+Pipfile.lock
+
+# Virtual environment
+venv/
+.env
+
+# Django
+*.log
+db.sqlite3
+
+# Media files
+media/
+
+# Static files
+staticfiles/
+
+# Configuration files
+*.swp
+
+# Ignore local development settings
+local_settings.py
+
+# Ignore vscode settings (if using vscode)
+.vscode/
+
+# Ignore pytest cache
+pytest_cache/
+
+# Ignore coverage report
+htmlcov/
+
+# Ignore docker-compose override file
+docker-compose.override.yml
+
+# Ignore macOS metadata
+.DS_Store
+
+# Ignore Python bytecode in subdirectories that are managed by pipenv
+**/__pycache__/
+*.pyc
+
+# Ignore test database
+test_db.sqlite3
