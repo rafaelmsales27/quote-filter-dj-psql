@@ -7,14 +7,18 @@
 </head>
 <body>
     <h1>FORM</h1>
-    {% if questions %}
-    <ul>
-        {% for question in questions %}
-            <li>{{ question.question_text }}</li>
+    <form method="POST">
+        {% csrf_token %}
+        {% for form in forms %}
+            <ul>
+                <li>{{ form.question_text }}</li>
+                <li>
+                    {{ form.answer }}
+                    {{ form.answer.errors }}  # Display any errors for the answer field
+                </li>
+            </ul>
         {% endfor %}
-    </ul>
-    {% else %}
-        <p>No active questions.</p>
-    {% endif %}
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>

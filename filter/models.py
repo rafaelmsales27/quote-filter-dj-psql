@@ -9,6 +9,7 @@ QUESTION_TYPES = (
     ('NUMBER', 'Number'),
     ('DATE', 'Date'),
     ('BOOLEAN', 'True/False'),
+    ('CHOICE', 'Choice'),
 )
 
 
