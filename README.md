@@ -3,5 +3,6 @@ Filter &amp; CRUD REST API with Docker (Django and PostgreSQL)
 
 
 # Usage
-Have at least python 3.10 and django 5.0.6 installed locally
+Have pipenv installed locally.
+Run "pipenv lock"
 Run "docker-compose up --build"

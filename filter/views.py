@@ -10,19 +10,13 @@ def index(request):
     return HttpResponse("You are at filter")
 
 
-def form(request):
-    active_questions = Question.objects.filter(active=True).order_by("order")
-    context = {"questions": active_questions}
-    return render(request, "filter/form.html", context)
-
-
 def detail(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     return render(request, "filter/detail.html", {"question": question})
 
 
 def form(request):
-    active_questions = Question.objects.filter(active=True)
+    active_questions = Question.objects.filter(active=True).order_by('order')
     forms = []  # List to store form instances
     for question in active_questions:
         form = QuestionForm(question=question)  # Create form for each question

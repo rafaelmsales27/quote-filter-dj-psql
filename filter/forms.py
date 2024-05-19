@@ -1,5 +1,6 @@
 from django import forms
 
+
 class QuestionForm(forms.Form):
     def __init__(self, *args, **kwargs):
         question = kwargs.pop('question')  # Access the question object
