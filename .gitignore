@@ -47,3 +47,6 @@ docker-compose.override.yml
 
 # Ignore test database
 test_db.sqlite3
+
+# Ignore ProjecIDX files
+.idx
