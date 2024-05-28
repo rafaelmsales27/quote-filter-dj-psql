@@ -1,4 +1,4 @@
-# quote-filter-dj-psql
+# Quote Filter
 Filter &amp; CRUD REST API with Docker (Django and PostgreSQL)
 
 
